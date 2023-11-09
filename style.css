@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  background-color: beige;
+}
+
+.header-nav ol {
+  display: flex;
+  margin-inline-start: 30rem;
+  text-indent: 20px;
+  list-style-type: none; /* Hide the numbers in the ordered list */
+}
+
+footer {
+  text-align: center;
+  padding: 4px;
+  bottom: 0;
+  background-color: black;
+}
