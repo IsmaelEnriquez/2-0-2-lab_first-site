@@ -1,18 +1,134 @@
-header {
-  display: flex;
-  background-color: beige;
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
-.header-nav ol {
+body {
   display: flex;
-  margin-inline-start: 30rem;
-  text-indent: 20px;
-  list-style-type: none; /* Hide the numbers in the ordered list */
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+}
+
+main {
+  flex: 1; /* Allow main content to grow and take up remaining space */
+}
+
+header {
+  border: 1px solid blue;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 1rem; */
+  padding: 1rem;
+}
+
+header p {
+  color: black;
+  background-color: bisque;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav li a {
+  text-decoration: none;
+  background-color: bisque;
+}
+
+
+nav {
+  border: 1px solid saddlebrown;
+}
+
+.links {
+  display: flex;
+  background-color: bisque;
+  justify-content: space-around;
+  list-style: none;
+  width: 20rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+div p {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+.image-container {
+  border: 1px solid yellow;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image1 {
+  width: 50%;
+}
+
+.welcomeLogo {
+  width: 40%;
+  margin-right: 5rem;
+}
+
+figcaption {
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: large;
 }
 
 footer {
-  text-align: center;
-  padding: 4px;
-  bottom: 0;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center; 
+  }
+}
+
+
+@media (max-width: 600px) {
+  .links {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+  }
+}
+
+@media (max-width: 600px) {
+  .image1 {
+    width: 100%;
+  }
+
+  .welcomeLogo {
+    display: none;
+  }
+
+  figcaption {
+    margin-bottom: 3rem;
+  }
 }
