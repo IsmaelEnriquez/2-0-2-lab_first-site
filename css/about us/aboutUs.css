@@ -39,7 +39,7 @@ nav li a {
   background-color: bisque;
   justify-content: space-around;
   list-style: none;
-  width: 20rem;
+  width: 30rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -64,12 +64,12 @@ nav li a {
   margin: 1rem;
 }
 
-h2 {
+h1 {
   color: white;
   text-align: center;
 }
 
-h3 {
+h2 {
   color: white;
   text-align: center;
 }
@@ -84,6 +84,10 @@ p {
   color: white;
   text-align: center;
   margin: 1rem;
+}
+
+.directive {
+  width: 40%;
 }
 
 footer {
