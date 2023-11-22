@@ -1,7 +1,44 @@
+  /* background-image: url("../../images/brooklyn.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* height: 37.5rem; */
+
 * {
   padding: 0;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
   background-color: black;
+}
+
+
+.us img {
+  max-width: 50%; /* Set the maximum width to 100% of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+
+h1 {
+  color: #795548;
+  /* color: black; */
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-size: 5rem;
+}
+
+.left p {
+  color: #795548;
+  /* color: white; */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 body {
@@ -47,51 +84,6 @@ nav li a {
   font-size: 1rem;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  color: white;
-}
-
-div p {
-  color: white;
-}
-
-footer p {
-  color: white;
-}
-
-.image-container {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1;
-  padding: 1rem;
-}
-
-.image1 {
-  width: 45%;
-}
-
-.welcomeLogo {
-  width: 40%;
-  margin-right: 6rem;
-}
-
-figcaption {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-align: center;
-  align-items: start;
-  margin-top: 1rem;
-  font-weight: bold;
-  font-size: large;
-}
 
 footer {
   display: flex;
@@ -102,6 +94,7 @@ footer {
   width: 100%;
   box-sizing: border-box;
   margin-top: auto;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -114,21 +107,5 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center; 
-  }
-
-  .image1 {
-    width: 100%;
-  }
-
-  .welcomeLogo {
-    display: none;
-  }
-
-  h1 {
-    text-align: center; /* Center the text within h1 */
-  }
-
-  figcaption {
-    width: 100%;
   }
 }
