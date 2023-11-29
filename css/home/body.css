@@ -131,6 +131,11 @@ body {
   display: flex;
   justify-content: start;
   max-width: 25%;
+  transition: all 1s ease 
+}
+.one:hover {
+  max-width:30%;
+ transition: all 1s ease ;
 }
 
 .one h2 {
